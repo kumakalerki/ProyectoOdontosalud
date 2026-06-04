@@ -380,6 +380,28 @@ a {
   margin: 8px 0 10px;
 }
 
+.map-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 20px;
+  padding: 0 16px;
+  color: var(--blue);
+  background: var(--blue-light);
+  border: 1px solid #CFE7FF;
+  border-radius: var(--radius);
+  font-weight: 800;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.map-link:hover,
+.map-link:focus-visible {
+  color: var(--blue-dark);
+  transform: translateY(-2px);
+  outline: none;
+}
+
 .map-wrapper {
   overflow: hidden;
   min-height: 380px;
