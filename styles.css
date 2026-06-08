@@ -83,13 +83,35 @@ a {
 }
 
 .nav-links {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 6px;
   list-style: none;
 }
 
+.nav-indicator {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 42px;
+  background: var(--blue-light);
+  border: 1px solid #CFE7FF;
+  border-radius: var(--radius);
+  opacity: 0;
+  transform: translate(0, -50%);
+  transition: left 0.34s ease, width 0.34s ease, opacity 0.2s ease;
+}
+
+.nav-indicator.visible {
+  opacity: 1;
+}
+
 .nav-links a {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   min-height: 42px;
@@ -100,10 +122,13 @@ a {
   transition: color 0.2s ease, background 0.2s ease;
 }
 
+.nav-links a.active {
+  color: var(--blue);
+}
+
 .nav-links a:hover,
 .nav-links a:focus-visible {
   color: var(--blue);
-  background: var(--blue-light);
   outline: none;
 }
 
@@ -655,6 +680,14 @@ a {
 
   .nav-links a {
     width: 100%;
+  }
+
+  .nav-links a.active {
+    background: var(--blue-light);
+  }
+
+  .nav-indicator {
+    display: none;
   }
 
   .hero {
