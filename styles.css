@@ -158,8 +158,8 @@ a {
   align-items: center;
   padding: calc(var(--header-height) + 48px) 16px 80px;
   background:
-    linear-gradient(90deg, rgba(10, 37, 64, 0.76), rgba(10, 37, 64, 0.26)),
-    url("https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat;
+    linear-gradient(90deg, rgba(10, 37, 64, 0.78), rgba(10, 37, 64, 0.18)),
+    url("assets/dra-patricia-consultorio.jpeg") center/cover no-repeat;
 }
 
 .hero-content {
@@ -725,7 +725,7 @@ a {
   }
 
   .hero {
-    background-position: 62% center;
+    background-position: 58% center;
   }
 
   .hero h1 {
