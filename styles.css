@@ -262,7 +262,6 @@ a {
   gap: 20px;
 }
 
-.info-panel,
 .contact-form,
 .contact-card {
   background: var(--white);
@@ -272,7 +271,23 @@ a {
 }
 
 .info-panel {
+  position: relative;
+  overflow: hidden;
   padding: 28px;
+  background: linear-gradient(135deg, #E8F3FF 0%, #F7FBFF 100%);
+  border: 1px solid #CFE7FF;
+  border-radius: var(--radius);
+  box-shadow: 0 18px 40px rgba(25, 118, 210, 0.11);
+}
+
+.info-panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: var(--blue);
 }
 
 .info-panel h3,
