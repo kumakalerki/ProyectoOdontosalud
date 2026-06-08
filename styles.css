@@ -459,7 +459,7 @@ a {
 
 .contact-layout {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 12fr 1fr;
   gap: 26px;
   align-items: start;
 }
